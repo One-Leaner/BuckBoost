@@ -33,4 +33,3 @@ Peripheral/src \
 Startup \
 User \
 User/code/src \
-ref \

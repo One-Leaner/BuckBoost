@@ -188,12 +188,6 @@ errno               0x4               f:/mounriver/mounriver_studio2/resources/a
 
 Discarded input sections
 
- .text          0x0000000000000000        0x0 ./ref/main.o
- .data          0x0000000000000000        0x0 ./ref/main.o
- .bss           0x0000000000000000        0x0 ./ref/main.o
- .debug_line    0x0000000000000000        0x0 ./ref/main.o
- .debug_str     0x0000000000000000       0xfc ./ref/main.o
- .comment       0x0000000000000000       0x34 ./ref/main.o
  .text          0x0000000000000000        0x0 ./User/code/src/adc.o
  .data          0x0000000000000000        0x0 ./User/code/src/adc.o
  .bss           0x0000000000000000        0x0 ./User/code/src/adc.o
@@ -1983,7 +1977,6 @@ RAM              0x0000000020000000 0x0000000000008000 xrw
 
 Linker script and memory map
 
-LOAD ./ref/main.o
 LOAD ./User/code/src/adc.o
 LOAD ./User/code/src/lead.o
 LOAD ./User/code/src/pid.o
@@ -3066,7 +3059,7 @@ END GROUP
                 0x0000000020008000                PROVIDE (_eusrstack = .)
 OUTPUT(BuckBoost.elf elf32-littleriscv)
 
-.debug_info     0x0000000000000000    0x11160
+.debug_info     0x0000000000000000    0x1115d
  .debug_info    0x0000000000000000     0x16e4 ./User/code/src/adc.o
  .debug_info    0x00000000000016e4       0xf3 ./User/code/src/lead.o
  .debug_info    0x00000000000017d7      0x137 ./User/code/src/pid.o
@@ -3083,9 +3076,9 @@ OUTPUT(BuckBoost.elf elf32-littleriscv)
  .debug_info    0x000000000000a746     0x1596 ./Peripheral/src/ch32v30x_rcc.o
  .debug_info    0x000000000000bcdc     0x2a60 ./Peripheral/src/ch32v30x_tim.o
  .debug_info    0x000000000000e73c     0x13d9 ./Peripheral/src/ch32v30x_usart.o
- .debug_info    0x000000000000fb15     0x164b ./Debug/debug.o
+ .debug_info    0x000000000000fb15     0x1648 ./Debug/debug.o
 
-.debug_abbrev   0x0000000000000000     0x2ca7
+.debug_abbrev   0x0000000000000000     0x2c8b
  .debug_abbrev  0x0000000000000000      0x2c4 ./User/code/src/adc.o
  .debug_abbrev  0x00000000000002c4       0xaf ./User/code/src/lead.o
  .debug_abbrev  0x0000000000000373       0xc0 ./User/code/src/pid.o
@@ -3102,7 +3095,7 @@ OUTPUT(BuckBoost.elf elf32-littleriscv)
  .debug_abbrev  0x0000000000001eab      0x351 ./Peripheral/src/ch32v30x_rcc.o
  .debug_abbrev  0x00000000000021fc      0x3ff ./Peripheral/src/ch32v30x_tim.o
  .debug_abbrev  0x00000000000025fb      0x312 ./Peripheral/src/ch32v30x_usart.o
- .debug_abbrev  0x000000000000290d      0x39a ./Debug/debug.o
+ .debug_abbrev  0x000000000000290d      0x37e ./Debug/debug.o
 
 .debug_loc      0x0000000000000000     0x447a
  .debug_loc     0x0000000000000000       0x42 ./User/code/src/adc.o

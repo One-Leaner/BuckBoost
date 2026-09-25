@@ -24,16 +24,6 @@ extern "C"
 #include "stdlib.h"
 #include "ch32v30x.h"
 
-/* UART Printf Definition */
-#define DEBUG_UART1 1
-#define DEBUG_UART2 2
-#define DEBUG_UART3 3
-
-/* DEBUG UATR Definition */
-#ifndef DEBUG
-#define DEBUG DEBUG_UART1
-#endif
-
     void Delay_Init(void);
     void Delay_Us(uint32_t n);
     void Delay_Ms(uint32_t n);
